@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+    <asp:Button ID="bt1" runat="server" text="確定鈕" OnClick="bt1_Click"/><br />
+        <asp:Label ID="label" runat="server" Text="Label元件"></asp:Label>
     </div>
     </form>
 </body>

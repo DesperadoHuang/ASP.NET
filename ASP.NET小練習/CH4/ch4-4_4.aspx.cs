@@ -5,15 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class ch4_4_1 : System.Web.UI.Page
+public partial class ch4_4 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
 
-    protected void bt1_Click(object sender, EventArgs e)
+    protected void imgBt_1_Click(object sender, ImageClickEventArgs e)
     {
-        label.Text = "按下了Button元件";
+        label_1.Text = "按下了ImageButton元件";
     }
 }
