@@ -11,4 +11,14 @@ public partial class ch4_Practice_2 : System.Web.UI.Page
     {
 
     }
+
+    protected void myInputAccoutnOnTextChanged(object sender, EventArgs e)
+    {
+        label_showAccount.Text = textbox_inputAccount.Text;
+    }
+
+    protected void myInputPasswordOnTextChanged(object sender, EventArgs e)
+    {
+        label_showPassword.Text = textbox_inputPassword.Text;
+    }
 }
