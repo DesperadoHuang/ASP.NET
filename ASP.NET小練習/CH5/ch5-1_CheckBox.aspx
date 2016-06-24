@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-1.aspx.cs" Inherits="ch5_1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-1_CheckBox.aspx.cs" Inherits="ch5_1" %>
 
 <!DOCTYPE html>
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-8.aspx.cs" Inherits="ch5_8" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-8_AdRotator_by_xml.aspx.cs" Inherits="ch5_8" %>
 
 <!DOCTYPE html>
 

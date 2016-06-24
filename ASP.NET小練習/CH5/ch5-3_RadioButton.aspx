@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-3.aspx.cs" Inherits="ch5_3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-3_RadioButton.aspx.cs" Inherits="ch5_3" %>
 
 <!DOCTYPE html>
 

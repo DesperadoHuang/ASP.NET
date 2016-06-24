@@ -14,7 +14,7 @@ public partial class ch5_1 : System.Web.UI.Page
 
     protected void btSubmit_Click(object sender, EventArgs e)
     {
-       
+
         string isChecked = "";
         if (CheckBox1.Checked == true)
         {
@@ -28,7 +28,7 @@ public partial class ch5_1 : System.Web.UI.Page
         {
             isChecked += CheckBox3.Text + "\n";
         }
-        
+
         TextBox1.Text = isChecked;
     }
 }

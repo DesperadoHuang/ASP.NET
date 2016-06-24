@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-6.aspx.cs" Inherits="ch5_6" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch5-6_DropDownList.aspx.cs" Inherits="ch5_6" %>
 
 <!DOCTYPE html>
 
