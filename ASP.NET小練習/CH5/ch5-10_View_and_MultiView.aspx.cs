@@ -9,14 +9,14 @@ public partial class ch5_10_View_and_MultiView : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
     protected void btSubmit_Click(object sender, EventArgs e)
     {
         if (textbox_inputAccount.Text == "KI264" && textbox_inputPassword.Text == "Aa123456")
         {
             label_userName.Text = textbox_inputAccount.Text;
-            MultiView1.ActiveViewIndex = 1;
+            MultiView1.ActiveViewIndex = 1; //設定要顯示的View(此為View2)
         }
         else
         {
@@ -26,6 +26,6 @@ public partial class ch5_10_View_and_MultiView : System.Web.UI.Page
 
     protected void btSignOut_Click(object sender, EventArgs e)
     {
-        MultiView1.ActiveViewIndex = 0;
+        MultiView1.ActiveViewIndex = 0; //設定要顯示的View(此為View1)
     }
 }

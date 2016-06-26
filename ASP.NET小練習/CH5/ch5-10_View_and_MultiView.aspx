@@ -11,11 +11,11 @@
     <form id="form1" runat="server">
         <div>
             <asp:Panel ID="Panel1" runat="server">
-                <asp:MultiView ID="MultiView1" runat="server">
+                <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                     <asp:View ID="View1" runat="server">
                         <asp:Label ID="Label1" runat="server" Text="使用者登入介面" Font-Size="XX-Large"></asp:Label><br /><br />
                         帳號：<asp:TextBox ID="textbox_inputAccount" runat="server" ></asp:TextBox><br />
-                        密碼：<asp:TextBox ID="textbox_inputPassword" runat="server"></asp:TextBox><br />
+                        密碼：<asp:TextBox ID="textbox_inputPassword" runat="server" TextMode="Password"></asp:TextBox><br />
                         <br />
                         <asp:Button ID="btSubmit" runat="server" Text="登入" OnClick="btSubmit_Click" /><br />
                     </asp:View>
