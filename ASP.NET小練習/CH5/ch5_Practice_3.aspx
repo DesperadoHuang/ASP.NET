@@ -23,7 +23,7 @@
             總類：<asp:Label ID="label_category" runat="server" ></asp:Label><br />
             品牌：<asp:Label ID="label_brand" runat="server" ></asp:Label><br />
 
-
+             
         </div>
     </form>
 </body>
