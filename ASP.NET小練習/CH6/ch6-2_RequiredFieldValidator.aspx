@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch6-2.aspx.cs" Inherits="ch6_2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch6-2_RequiredFieldValidator.aspx.cs" Inherits="ch6_2" %>
 
 <!DOCTYPE html>
 
