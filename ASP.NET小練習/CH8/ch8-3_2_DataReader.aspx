@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch8-2_2_connet_with_Access.aspx.cs" Inherits="ch8_2_2_connet_with_Access" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch8-3_2_DataReader.aspx.cs" Inherits="ch8_2_3_use_DataReader" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Button ID="bt_1" runat="server" Text="連結Access" OnClick="bt_1_Click" />
+        
     </div>
     </form>
 </body>
