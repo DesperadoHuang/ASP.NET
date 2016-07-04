@@ -11,7 +11,7 @@ public partial class ch8_3_2A_use_DataReader : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string dbPath = "D:\\ASP.NET\\ASP.NET小練習\\CH8\\App_Data\\DBMS.mdb";
+        string dbPath = "C:\\Users\\ki264\\MyPractice\\ASP.NET\\ASP.NET小練習\\CH8\\App_Data\\DBMS.mdb";
         string source = "Provider=Microsoft.Jet.OLEDB.4.0;" + "Data source=" + dbPath;
         OleDbConnection connection = new OleDbConnection(source);
 
