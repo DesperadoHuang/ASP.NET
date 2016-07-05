@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch9-6_8B_GridView_HyperLinkField.aspx.cs" Inherits="ch9_6_8B_GridView_HyperLinkField" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch9-6_8_GridView_HyperLinkField_B.aspx.cs" Inherits="ch9_6_8B_GridView_HyperLinkField" %>
 
 <!DOCTYPE html>
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch9-6_8A_GridView_HyperLinkField.aspx.cs" Inherits="ch9_6_8A_GridView_HyperLinkField" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch9-6_8_GridView_HyperLinkField_A.aspx.cs" Inherits="ch9_6_8A_GridView_HyperLinkField" %>
 
 <!DOCTYPE html>
 
@@ -39,7 +39,7 @@
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:HyperLinkField DataNavigateUrlFields="學號" DataNavigateUrlFormatString="ch9-6_8B_GridView_HyperLinkField.aspx?Stu_Id={0}" DataTextField="姓名" DataTextFormatString="呼叫" />
+                <asp:HyperLinkField DataNavigateUrlFields="學號" DataNavigateUrlFormatString="ch9-6_8_GridView_HyperLinkField_B.aspx?Stu_Id={0}" DataTextField="姓名" DataTextFormatString="呼叫" />
                 <asp:BoundField DataField="序號" HeaderText="序號" InsertVisible="False" ReadOnly="True" SortExpression="序號" />
                 <asp:BoundField DataField="學號" HeaderText="學號" SortExpression="學號" />
                 <asp:BoundField DataField="姓名" HeaderText="姓名" SortExpression="姓名" />
