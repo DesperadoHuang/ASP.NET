@@ -10,11 +10,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <asp:AccessDataSource ID="accessDataSource" runat="server" DataFile="~/App_Data/學生資料庫.accdb" SelectCommand="SELECT * FROM [學生成績表]"></asp:AccessDataSource>
+    <asp:AccessDataSource ID="accessDataSource" runat="server" DataFile="~/App_Data/MyDatabase.mdb" SelectCommand="SELECT * FROM [學生成績表]"></asp:AccessDataSource>
         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="序號" DataSourceID="accessDataSource" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:BoundField DataField="序號" HeaderText="序號" InsertVisible="False" ReadOnly="True" SortExpression="序號" />
+                <asp:BoundField DataField="序號" HeaderText="序號" ReadOnly="True" SortExpression="序號" />
                 <asp:BoundField DataField="學號" HeaderText="學號" SortExpression="學號" />
                 <asp:BoundField DataField="姓名" HeaderText="姓名" SortExpression="姓名" />
                 <asp:BoundField DataField="性別" HeaderText="性別" SortExpression="性別" />
