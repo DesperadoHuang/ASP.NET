@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div >
             <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/result.GIF" /><br />
             </asp:Panel>
@@ -49,7 +49,10 @@
                                     </asp:TemplateField>
                                     <asp:BoundField DataField="學號" HeaderText="學號" ReadOnly="True" SortExpression="學號" />
                                     <asp:BoundField DataField="姓名" HeaderText="姓名" SortExpression="姓名" />
-                                    <asp:BoundField DataField="選修課程" HeaderText="選修課程" SortExpression="選修課程" />
+                                    <asp:BoundField DataField="選修課程" HeaderText="選修課程" SortExpression="選修課程">
+                                        <FooterStyle HorizontalAlign="Left" />
+                                        <ItemStyle HorizontalAlign="Left" />
+                                    </asp:BoundField>
                                     <asp:BoundField DataField="成績" HeaderText="成績" SortExpression="成績" />
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
@@ -66,9 +69,17 @@
                         </asp:Panel>
                     </td>
                     <td>
+                        <br />
+                        <br />
                         <asp:Panel ID="Panel3" runat="server" HorizontalAlign="Center">
-                            學號：<asp:TextBox ID="textbox_number" runat="server"></asp:TextBox><br />
-                            姓名：<asp:TextBox ID="textbox_name" runat="server"></asp:TextBox><br />
+                            學&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號：<asp:TextBox ID="textbox_number" runat="server"></asp:TextBox><br />
+                            姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：<asp:TextBox ID="textbox_name" runat="server"></asp:TextBox><br />
+                            選修課程：<asp:TextBox ID="textbox_course" runat="server"></asp:TextBox><br />
+                            成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;績：<asp:TextBox ID="textbox_score" runat="server"></asp:TextBox><br />
+                            <br />
+                            <br />
+                            <asp:Button ID="btAdd" runat="server" Text="確定新增" OnClick="btAdd_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="btClear" runat="server" Text="清除" OnClick="btClear_Click" />
                         </asp:Panel>
                     </td>
                 </tr>
