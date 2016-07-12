@@ -27,7 +27,7 @@
             <asp:Parameter Name="學號" Type="String" />
         </UpdateParameters>
         </asp:AccessDataSource>
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="學號" DataSourceID="accessDataSource" ForeColor="#333333" GridLines="None">
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="學號" DataSourceID="accessDataSource_main" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
             <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
             <EditRowStyle BackColor="#2461BF" />
@@ -44,8 +44,44 @@
             <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
             <RowStyle BackColor="#EFF3FB" />
         </asp:DetailsView>
-        <asp:AccessDataSource ID="accessDataeSource_sub" runat="server"></asp:AccessDataSource>
-        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+        <asp:AccessDataSource ID="accessDataeSource_sub" runat="server" DataFile="~/App_Data/MyDatabase.mdb" DeleteCommand="DELETE FROM [選課資料表] WHERE [學號] = ? AND [課程代號] = ?" InsertCommand="INSERT INTO [選課資料表] ([學號], [課程代號], [成績]) VALUES (?, ?, ?)" SelectCommand="SELECT * FROM [選課資料表] WHERE ([學號] = ?)" UpdateCommand="UPDATE [選課資料表] SET [成績] = ? WHERE [學號] = ? AND [課程代號] = ?">
+            <DeleteParameters>
+                <asp:Parameter Name="學號" Type="String" />
+                <asp:Parameter Name="課程代號" Type="String" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="學號" Type="String" />
+                <asp:Parameter Name="課程代號" Type="String" />
+                <asp:Parameter Name="成績" Type="Int32" />
+            </InsertParameters>
+            <SelectParameters>
+                <asp:ControlParameter ControlID="DetailsView1" Name="學號" PropertyName="SelectedValue" Type="String" />
+            </SelectParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="成績" Type="Int32" />
+                <asp:Parameter Name="學號" Type="String" />
+                <asp:Parameter Name="課程代號" Type="String" />
+            </UpdateParameters>
+        </asp:AccessDataSource>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="學號,課程代號" DataSourceID="accessDataeSource_sub" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <Columns>
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:BoundField DataField="學號" HeaderText="學號" ReadOnly="True" SortExpression="學號" />
+                <asp:BoundField DataField="課程代號" HeaderText="課程代號" ReadOnly="True" SortExpression="課程代號" />
+                <asp:BoundField DataField="成績" HeaderText="成績" SortExpression="成績" />
+            </Columns>
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+        </asp:GridView>
     </div>
     </form>
 </body>
