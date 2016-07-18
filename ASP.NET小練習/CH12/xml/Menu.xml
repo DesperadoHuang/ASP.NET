@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TreeNode name="數位學習" value="數位學習">
+  <TreeNode name="線上課程" value="線上課程">
+    <TreeNode name="課程簡介" value="課程簡介"/>
+    <TreeNode name="課程選單" value="課程選單"/>
+  </TreeNode>
+  <TreeNode name="作業管理" value="作業管理">
+    <TreeNode name="指定作業" value="指定作業"/>
+    <TreeNode name="上傳作業" value="上傳作業"/>
+    <TreeNode name="作業分享" value="作業分享"/>
+  </TreeNode>
+  <TreeNode name="互動討論" value="互動討論">
+    <TreeNode name="同步互動" value="同步互動"/>
+    <TreeNode name="非同步互動" value="非同步互動"/>
+  </TreeNode>
+</TreeNode>
