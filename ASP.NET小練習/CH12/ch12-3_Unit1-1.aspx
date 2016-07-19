@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch12-3_1_SiteMapPath.aspx.cs" Inherits="ch12_3_1_SiteMapPath" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ch12-3_Unit1-1.aspx.cs" Inherits="ch12_3_Unit1_1" %>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,10 @@
     <div>
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         <asp:SiteMapPath ID="SiteMapPath1" runat="server">
-        </asp:SiteMapPath>
+        </asp:SiteMapPath><br />
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"></asp:Menu>
+        Unit1-1
+
     </div>
     </form>
 </body>
